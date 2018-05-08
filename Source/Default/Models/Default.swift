@@ -9,6 +9,6 @@
 import Foundation
 
 struct Default {
-	
+
 	static let test: String = "delete this file"
 }

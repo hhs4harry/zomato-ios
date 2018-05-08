@@ -7,12 +7,11 @@
 //
 
 final class DefaultSpec: XCTestCase {
-	
+
 	func defaultTest() {
 		let defaultValue: String = Default.test
 		XCTAssert(defaultValue == "delete this file")
 	}
-	
 }
 
 import XCTest
