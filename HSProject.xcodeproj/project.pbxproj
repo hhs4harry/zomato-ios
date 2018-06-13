@@ -144,6 +144,7 @@
 				4AE27AED207436F100F977A1 /* Frameworks */,
 				4AE27AEE207436F100F977A1 /* Resources */,
 				4AC982BB20A1F0FD0008D1AA /* Lint Swift */,
+				4A1D466120D13ECC0059DF6A /* Swift Format */,
 			);
 			buildRules = (
 			);
@@ -218,6 +219,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4A1D466120D13ECC0059DF6A /* Swift Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Format";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/swiftformat .";
+		};
 		4AC982BB20A1F0FD0008D1AA /* Lint Swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
