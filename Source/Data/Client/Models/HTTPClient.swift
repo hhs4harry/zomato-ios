@@ -92,7 +92,7 @@ extension HTTPClient: NetworkClient {
 
 extension HTTPClient: DependencyInjectionAware {
     static func register(in container: Container) {
-        container.register(NetworkClient.self) { _ in HTTPClient(session: .init()) }.inObjectScope(.transient)
+        container.register(NetworkClient.self) { _ in HTTPClient(session: .shared) }.inObjectScope(.transient)
     }
 }
 

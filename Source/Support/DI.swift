@@ -22,9 +22,15 @@ final class Dependencies {
         SearchPresenter.self,
         SearchViewController.self,
 
+        // MARK: Domain
+
+        SearchUseCaseImplementation.self,
+
         // MARK: Data
 
         HTTPClient.self,
+        SearchService.self,
+        Endpoint.self,
     ]
 
     static func initialise(in container: Container) {

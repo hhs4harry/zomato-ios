@@ -24,7 +24,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKc-HG-UgM">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                     <connections>
-                        <action selector="primaryActionTriggered:" destination="-2" eventType="primaryActionTriggered" id="1pu-Uh-MVs"/>
+                        <action selector="primaryActionTriggered:" destination="iN0-l3-epB" eventType="primaryActionTriggered" id="bMl-PL-G0w"/>
                     </connections>
                 </button>
             </subviews>
@@ -41,7 +41,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="titleLabel" destination="5fO-Yh-ste" id="U7H-FE-hRG"/>
+                <outlet property="titleLabel" destination="5fO-Yh-ste" id="WFe-op-tSV"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="357.5"/>
         </view>

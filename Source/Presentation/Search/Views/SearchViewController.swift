@@ -25,7 +25,7 @@ final class SearchViewController: UIViewController, PresenterSource {
     @IBOutlet private var tableView: UITableView! {
         didSet {
             tableView.estimatedRowHeight = UITableViewAutomaticDimension
-            tableView.register(ResultView.self, forCellReuseIdentifier: ResultView.reuseIdentifier)
+            tableView.register(ResultView.self)
         }
     }
 
