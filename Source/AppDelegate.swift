@@ -10,5 +10,24 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
+
+	// MARK: - Conformance
+
+	// MARK: UIApplicationDelegate
+
+	func application(
+		_: UIApplication,
+		didFinishLaunchingWithOptions _: [UIApplicationLaunchOptionsKey: Any]? = nil
+	) -> Bool {
+		Dependencies.initialise(in: SwinjectStoryboard.defaultContainer)
+
+		return true
+	}
+
+	// MARK: - Properties
+
+	var window: UIWindow?
 }
+
+import Swinject
+import SwinjectStoryboard
