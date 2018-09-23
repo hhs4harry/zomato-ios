@@ -58,7 +58,8 @@ final class SearchPresenter: SearchPresenting {
                 self.results.value = results
             }
 
-        disposable += results.producer.map { $0.map { [unowned self] in Result(title: $0.name, action: self.action(forResult: $0)) } }
+        disposable += results.producer
+            .map { $0.map { [unowned self] in Result(title: $0.name, action: self.action(forResult: $0)) } }
             .observe(on: QueueScheduler.main)
             .startWithValues { [unowned self] results in
                 self.display.show(results: results)

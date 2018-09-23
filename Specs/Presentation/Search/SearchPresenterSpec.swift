@@ -32,6 +32,7 @@ final class SearchPresenterSpec: QuickSpec {
     func resolve() {
         it("resolves its dependencies") {
             let viewController: SearchViewController = self.loadUI(storyboard: "Search")
+            _ = viewController.view
             expect(viewController).toEventuallyNot(beNil())
             expect(viewController.presenter).toNot(beNil())
         }
