@@ -7,17 +7,17 @@
 //
 
 final class MockURLSessionDataTask: URLSessionDataTask {
-	let resumeAction: () -> Void
+    let resumeAction: () -> Void
 
-	init(resumeAction: @escaping () -> Void) {
-		self.resumeAction = resumeAction
-	}
+    init(resumeAction: @escaping () -> Void) {
+        self.resumeAction = resumeAction
+    }
 
-	override func resume() {
-		resumeAction()
-	}
+    override func resume() {
+        resumeAction()
+    }
 
-	override func cancel() {}
+    override func cancel() {}
 }
 
 import Foundation

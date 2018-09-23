@@ -7,7 +7,7 @@
 //
 
 protocol NetworkClient {
-	@discardableResult func performTask<T: Decodable>(with request: Request) -> SignalProducer<T, API>
+    @discardableResult func performTask<T: Decodable>(with request: Request) -> SignalProducer<T, API>
 }
 
 import Foundation

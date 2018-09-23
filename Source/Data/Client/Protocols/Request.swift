@@ -7,7 +7,7 @@
 //
 
 protocol Request {
-	var urlRequest: URLRequest { get }
+    var urlRequest: URLRequest { get }
 }
 
 import Foundation

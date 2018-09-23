@@ -7,7 +7,7 @@
 //
 
 enum RepositoryError: Error {
-	case noNetwork
-	case timeout
-	case general
+    case noNetwork
+    case timeout
+    case general
 }

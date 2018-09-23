@@ -7,7 +7,7 @@
 //
 
 struct MockRequest: Request {
-	let urlRequest: URLRequest
+    let urlRequest: URLRequest
 }
 
 import Foundation

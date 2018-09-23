@@ -7,24 +7,24 @@
 //
 
 protocol DependencyInjectionAware {
-	static func register(in container: Container)
+    static func register(in container: Container)
 }
 
 final class Dependencies {
-	private(set) static var container: Container!
+    private(set) static var container: Container!
 
-	static let managedclasses: [DependencyInjectionAware.Type] = [
+    static let managedclasses: [DependencyInjectionAware.Type] = [
 
-		// MARK: Data
+        // MARK: Data
 
-		HTTPClient.self
-	]
+        HTTPClient.self,
+    ]
 
-	static func initialise(in container: Container) {
-		self.container = container
+    static func initialise(in container: Container) {
+        self.container = container
 
-		managedclasses.forEach { $0.register(in: container) }
-	}
+        managedclasses.forEach { $0.register(in: container) }
+    }
 }
 
 import Swinject

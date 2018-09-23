@@ -7,11 +7,11 @@
 //
 
 extension Decodable {
-	private static var decoder: JSONDecoder { return .init() }
+    private static var decoder: JSONDecoder { return .init() }
 
-	static func decode(fromJSONData data: Data) throws -> Self {
-		return try decoder.decode(self, from: data)
-	}
+    static func decode(fromJSONData data: Data) throws -> Self {
+        return try decoder.decode(self, from: data)
+    }
 }
 
 import Foundation
