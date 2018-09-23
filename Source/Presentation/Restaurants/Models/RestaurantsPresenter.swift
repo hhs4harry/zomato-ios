@@ -46,7 +46,6 @@ final class RestaurantsPresenter: RestaurantsPresenting {
     // MARK: - Helpers
 
     private func image(url: URL) -> SignalProducer<UIImage?, NoError> {
-        print(url.absoluteURL.absoluteString)
         return imageUseCase.load(image: url).observe(on: QueueScheduler.main)
     }
 

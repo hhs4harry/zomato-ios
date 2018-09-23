@@ -63,7 +63,7 @@ final class StorageClient: Storage {
 
 extension StorageClient: DependencyInjectionAware {
     static func register(in container: Container) {
-        container.register(Storage.self) { _ in StorageClient() }
+        container.register(Storage.self) { _ in StorageClient() }.inObjectScope(.container)
     }
 }
 

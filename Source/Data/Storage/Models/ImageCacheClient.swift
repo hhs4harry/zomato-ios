@@ -26,24 +26,24 @@ final class ImageCacheClient: ImageCache {
     // MARK: ImageCache
 
     func store(image: UIImage, named: String) {
-        cache.setObject(image, forKey: NSString(string: named))
+        cache.setObject(image, forKey: NSString(string: named.encoded))
 
         do {
             guard let data = UIImageJPEGRepresentation(image, 1.0) else { return }
-            try storage.store(data, named: named)
+            try storage.store(data, named: named.encoded)
         } catch {
             fatalError(error.localizedDescription)
         }
     }
 
     func retrive(imageNamed name: String) -> UIImage? {
-        if let image = cache.object(forKey: NSString(string: name)) {
+        if let image = cache.object(forKey: NSString(string: name.encoded)) {
             return image
         }
 
         do {
-            guard let data = try storage.retrive(itemNamed: name), let image = UIImage(data: data) else { return nil }
-            cache.setObject(image, forKey: NSString(string: name))
+            guard let data = try storage.retrive(itemNamed: name.encoded), let image = UIImage(data: data) else { return nil }
+            cache.setObject(image, forKey: NSString(string: name.encoded))
             return image
         } catch {
             fatalError(error.localizedDescription)
@@ -51,11 +51,17 @@ final class ImageCacheClient: ImageCache {
     }
 }
 
+private extension String {
+    var encoded: String {
+        return md5
+    }
+}
+
 // MARK: DependencyInjectionAware
 
 extension ImageCacheClient: DependencyInjectionAware {
     static func register(in container: Container) {
-        container.register(ImageCache.self) { ImageCacheClient(storage: $0.resolve(Storage.self)!) }
+        container.register(ImageCache.self) { ImageCacheClient(storage: $0.resolve(Storage.self)!) }.inObjectScope(.container)
     }
 }
 

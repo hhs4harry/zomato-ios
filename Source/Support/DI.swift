@@ -39,6 +39,7 @@ final class Dependencies {
         RestaurantsService.self,
         StorageClient.self,
         ImageCacheClient.self,
+        JSONCacheClient.self,
     ]
 
     static func initialise(in container: Container) {
