@@ -15,6 +15,7 @@ protocol SearchRouter: Router {}
 protocol SearchPresenting {
     var searchValue: MutableProperty<String?> { get }
     func viewDidBecomeReady()
+    func inject(presenter: RestaurantsInjectable)
 }
 
 final class SearchPresenter: SearchPresenting {
@@ -25,6 +26,7 @@ final class SearchPresenter: SearchPresenting {
 
     private let disposable: CompositeDisposable = .init()
     private let results: MutableProperty<[City]> = .init([])
+    private var city: City!
 
     // MARK: Injected
 
@@ -38,8 +40,10 @@ final class SearchPresenter: SearchPresenting {
         self.display = display
         self.router = router
         self.searchUseCase = searchUseCase
+    }
 
-        configureBindings()
+    deinit {
+        disposable.dispose()
     }
 
     // MARK: - Helpers
@@ -68,7 +72,8 @@ final class SearchPresenter: SearchPresenting {
 
     func action(forResult city: City) -> ButtonAction {
         return { [unowned self] in
-            // Inject
+            self.city = city
+            self.router.performSegue(withIdentifier: Routes.Search.Restaurants.rawValue)
         }
     }
 
@@ -79,7 +84,12 @@ final class SearchPresenter: SearchPresenting {
     let searchValue: MutableProperty<String?> = .init("")
 
     func viewDidBecomeReady() {
+        configureBindings()
         display.set(placeholder: "Enter location e.g Melbourne, Australia")
+    }
+
+    func inject(presenter: RestaurantsInjectable) {
+        presenter.inject(city: city)
     }
 }
 

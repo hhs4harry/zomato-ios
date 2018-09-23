@@ -62,11 +62,20 @@
                         <outlet property="tableView" destination="HuW-WX-FvJ" id="udp-ym-5MY"/>
                         <outlet property="tableViewBottomConstraint" destination="g2u-vZ-cbO" id="YHd-y9-PEs"/>
                         <outlet property="textField" destination="F9H-Po-kgH" id="8MR-UM-fn1"/>
+                        <segue destination="dXC-FA-PW4" kind="show" identifier="Restaurants" id="Hnd-Zc-emw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUe-Xc-RD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="177" y="131"/>
+        </scene>
+        <!--Restaurants-->
+        <scene sceneID="rOq-sw-NsC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Restaurants" id="dXC-FA-PW4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12c-hj-31t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="130"/>
         </scene>
     </scenes>
 </document>

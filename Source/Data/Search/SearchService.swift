@@ -12,8 +12,8 @@ final class SearchService: SearchRepository {
 
     // MARK: Injected
 
-    private let client: NetworkClient!
-    private let endpoint: EndpointRetriving!
+    private let client: NetworkClient
+    private let endpoint: EndpointRetriving
 
     // MARK: - Initialise
 

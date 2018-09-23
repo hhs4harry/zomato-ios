@@ -10,4 +10,8 @@ struct Routes {
     enum Splash: String {
         case Search
     }
+
+    enum Search: String {
+        case Restaurants
+    }
 }

@@ -43,11 +43,26 @@ final class SearchViewController: UIViewController, PresenterSource {
         disposable += presenter.searchValue <~ textField.reactive.continuousTextValues.producer
     }
 
+    deinit {
+        disposable.dispose()
+    }
+
     // MARK: - Conformance
 
     // MARK: PresenterSource
 
     var presenter: SearchPresenting!
+}
+
+extension SearchViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let viewController: RestaurantsViewController = segue.destination as? RestaurantsViewController,
+            let injectable: RestaurantsInjectable = viewController.presenter as? RestaurantsInjectable
+        else { return }
+
+        presenter.inject(presenter: injectable)
+    }
 }
 
 // MARK: SearchDisplay

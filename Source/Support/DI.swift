@@ -21,16 +21,20 @@ final class Dependencies {
         SplashViewController.self,
         SearchPresenter.self,
         SearchViewController.self,
+        RestaurantsPresenter.self,
+        RestaurantsViewController.self,
 
         // MARK: Domain
 
         SearchUseCaseImplementation.self,
+        RestaurantsUseCaseImplementation.self,
 
         // MARK: Data
 
         HTTPClient.self,
-        SearchService.self,
         Endpoint.self,
+        SearchService.self,
+        RestaurantsService.self,
     ]
 
     static func initialise(in container: Container) {
