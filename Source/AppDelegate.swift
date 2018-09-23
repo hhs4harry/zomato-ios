@@ -21,6 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         Dependencies.initialise(in: SwinjectStoryboard.defaultContainer)
 
+        let splashViewController: SplashViewController = "Splash".loadFromStoryboard()
+
+        window = UIWindow()
+        window?.rootViewController = splashViewController
+        window?.makeKeyAndVisible()
+
         return true
     }
 

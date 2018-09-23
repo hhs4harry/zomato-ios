@@ -15,6 +15,13 @@ final class Dependencies {
 
     static let managedclasses: [DependencyInjectionAware.Type] = [
 
+        // MARK: Presentation
+
+        SplashPresenter.self,
+        SplashViewController.self,
+        SearchPresenter.self,
+        SearchViewController.self,
+
         // MARK: Data
 
         HTTPClient.self,

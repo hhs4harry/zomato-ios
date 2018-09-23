@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ResultView" customModule="zomato" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fO-Yh-ste">
+                    <rect key="frame" x="10" y="10" width="355" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKc-HG-UgM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                    <connections>
+                        <action selector="primaryActionTriggered:" destination="-2" eventType="primaryActionTriggered" id="1pu-Uh-MVs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eKc-HG-UgM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Bk-om-ZpQ"/>
+                <constraint firstAttribute="trailing" secondItem="5fO-Yh-ste" secondAttribute="trailing" constant="10" id="92v-ed-PhQ"/>
+                <constraint firstAttribute="trailing" secondItem="eKc-HG-UgM" secondAttribute="trailing" id="9Sl-NF-nNl"/>
+                <constraint firstAttribute="bottom" secondItem="5fO-Yh-ste" secondAttribute="bottom" constant="10" id="Jhj-dx-dDy"/>
+                <constraint firstItem="5fO-Yh-ste" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="KfF-Mp-Vu4"/>
+                <constraint firstItem="5fO-Yh-ste" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="NbI-WW-q0T"/>
+                <constraint firstAttribute="bottom" secondItem="eKc-HG-UgM" secondAttribute="bottom" id="RYR-dg-Mt9"/>
+                <constraint firstItem="eKc-HG-UgM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XBX-2j-DYy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="5fO-Yh-ste" id="U7H-FE-hRG"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="357.5"/>
+        </view>
+    </objects>
+</document>
