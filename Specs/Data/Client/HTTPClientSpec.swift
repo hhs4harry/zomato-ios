@@ -47,7 +47,7 @@ final class HTTPClientSpec: QuickSpec {
         context("when there is no network") {
             beforeEach {
                 self.session.error = NSError(
-                    domain: "sonarr.httpclient.error.spec",
+                    domain: "zomato.httpclient.error.spec",
                     code: NSURLErrorNotConnectedToInternet, userInfo: nil
                 )
             }
@@ -71,7 +71,7 @@ final class HTTPClientSpec: QuickSpec {
     func timeout() {
         context("when it timesout") {
             beforeEach {
-                self.session.error = NSError(domain: "sonarr.httpclient.error.spec", code: NSURLErrorTimedOut, userInfo: nil)
+                self.session.error = NSError(domain: "zomato.httpclient.error.spec", code: NSURLErrorTimedOut, userInfo: nil)
             }
 
             afterEach {
@@ -93,7 +93,7 @@ final class HTTPClientSpec: QuickSpec {
     func unexpected() {
         context("when the error code is not caught") {
             beforeEach {
-                self.session.error = NSError(domain: "sonarr.httpclient.error.spec", code: 451, userInfo: nil)
+                self.session.error = NSError(domain: "zomato.httpclient.error.spec", code: 451, userInfo: nil)
             }
 
             afterEach {
@@ -107,7 +107,7 @@ final class HTTPClientSpec: QuickSpec {
                 self.disposable = task.startWithFailed { error = $0 }
 
                 expect(error)
-                    .toEventually(equal(.unexpected(NSError(domain: "sonarr.httpclient.error.spec", code: 451, userInfo: nil))))
+                    .toEventually(equal(.unexpected(NSError(domain: "zomato.httpclient.error.spec", code: 451, userInfo: nil))))
             }
         }
     }

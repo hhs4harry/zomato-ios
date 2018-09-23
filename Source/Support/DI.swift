@@ -37,6 +37,8 @@ final class Dependencies {
         ImageService.self,
         SearchService.self,
         RestaurantsService.self,
+        StorageClient.self,
+        ImageCacheClient.self,
     ]
 
     static func initialise(in container: Container) {

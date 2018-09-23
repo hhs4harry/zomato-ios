@@ -19,6 +19,8 @@
 		4AA1BF0C21574A8D0095EB08 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1BF0B21574A8D0095EB08 /* HTTPClient.swift */; };
 		4A4F7DD821574C44000B08D7 /* HTTPClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7DD721574C44000B08D7 /* HTTPClientSpec.swift */; };
 		4A4F7E4921578BBD000B08D7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E4821578BBD000B08D7 /* HTTPMethod.swift */; };
+		4ADE73FE2158092D00EB8E6F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73FD2158092D00EB8E6F /* ImageCache.swift */; };
+		4ADE73FC2158091300EB8E6F /* ImageCacheClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73FB2158091300EB8E6F /* ImageCacheClient.swift */; };
 		4ADE73EF2157E97500EB8E6F /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73EE2157E97500EB8E6F /* ImageRepository.swift */; };
 		4ADE73F12157E98C00EB8E6F /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73F02157E98C00EB8E6F /* ImageService.swift */; };
 		4ADE73ED2157E4A300EB8E6F /* ImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73EC2157E4A300EB8E6F /* ImageUseCase.swift */; };
@@ -65,6 +67,9 @@
 		4A4F7E0521576484000B08D7 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E0421576484000B08D7 /* SplashPresenter.swift */; };
 		4A4F7E2B215780FE000B08D7 /* SplashPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E2A215780FE000B08D7 /* SplashPresenterSpec.swift */; };
 		4A4F7E0121576436000B08D7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E0021576436000B08D7 /* SplashViewController.swift */; };
+		4ADE73FA215808F200EB8E6F /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73F9215808F200EB8E6F /* Storage.swift */; };
+		4ADE73F7215808C400EB8E6F /* StorageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73F6215808C400EB8E6F /* StorageClient.swift */; };
+		4ADE740121580C3500EB8E6F /* StorageClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE740021580C3500EB8E6F /* StorageClientSpec.swift */; };
 		4A4F7E0B215764FD000B08D7 /* String+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E0A215764FD000B08D7 /* String+Dequeue.swift */; };
 		4A4F7E3621578223000B08D7 /* Support+DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E3521578223000B08D7 /* Support+DI.swift */; };
 		4ADE73F32157F2BE00EB8E6F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73F22157F2BE00EB8E6F /* Theme.swift */; };
@@ -96,6 +101,8 @@
 		4AA1BF0B21574A8D0095EB08 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		4A4F7DD721574C44000B08D7 /* HTTPClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpec.swift; sourceTree = "<group>"; };
 		4A4F7E4821578BBD000B08D7 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		4ADE73FD2158092D00EB8E6F /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		4ADE73FB2158091300EB8E6F /* ImageCacheClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheClient.swift; sourceTree = "<group>"; };
 		4ADE73EE2157E97500EB8E6F /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		4ADE73F02157E98C00EB8E6F /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		4ADE73EC2157E4A300EB8E6F /* ImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUseCase.swift; sourceTree = "<group>"; };
@@ -146,6 +153,9 @@
 		4A4F7E0421576484000B08D7 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		4A4F7E2A215780FE000B08D7 /* SplashPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenterSpec.swift; sourceTree = "<group>"; };
 		4A4F7E0021576436000B08D7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4ADE73F9215808F200EB8E6F /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4ADE73F6215808C400EB8E6F /* StorageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageClient.swift; sourceTree = "<group>"; };
+		4ADE740021580C3500EB8E6F /* StorageClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageClientSpec.swift; sourceTree = "<group>"; };
 		4A4F7E0A215764FD000B08D7 /* String+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dequeue.swift"; sourceTree = "<group>"; };
 		4A4F7E3521578223000B08D7 /* Support+DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Support+DI.swift"; sourceTree = "<group>"; };
 		4A4F7DE32157540B000B08D7 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
@@ -192,6 +202,7 @@
 			children = (
 				4A4F7DD621574C22000B08D7 /* Client */,
 				4A4F7DF3215755FF000B08D7 /* Mocks */,
+				4ADE73FF21580C1400EB8E6F /* Storage */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -504,6 +515,7 @@
 				4ADE73E02157D10300EB8E6F /* Restaurants */,
 				4A4F7E43215789DC000B08D7 /* Search */,
 				4A4F7DEF2157555B000B08D7 /* Shared */,
+				4ADE73F4215808A200EB8E6F /* Storage */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -586,6 +598,41 @@
 				4ADE73E42157D12A00EB8E6F /* RestaurantsResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4ADE73F4215808A200EB8E6F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE73F5215808B100EB8E6F /* Models */,
+				4ADE73F8215808CD00EB8E6F /* Protocols */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		4ADE73F5215808B100EB8E6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE73FB2158091300EB8E6F /* ImageCacheClient.swift */,
+				4ADE73F6215808C400EB8E6F /* StorageClient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4ADE73F8215808CD00EB8E6F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE73FD2158092D00EB8E6F /* ImageCache.swift */,
+				4ADE73F9215808F200EB8E6F /* Storage.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4ADE73FF21580C1400EB8E6F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE740021580C3500EB8E6F /* StorageClientSpec.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		4AE27AE7207436F100F977A1 = {
@@ -794,6 +841,7 @@
 				4A4F7DF721575638000B08D7 /* MockURLSessionDataTask.swift in Sources */,
 				4A4F7E3921578487000B08D7 /* SearchPresenterSpec.swift in Sources */,
 				4A4F7E2B215780FE000B08D7 /* SplashPresenterSpec.swift in Sources */,
+				4ADE740121580C3500EB8E6F /* StorageClientSpec.swift in Sources */,
 				4A4F7E3621578223000B08D7 /* Support+DI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -812,6 +860,8 @@
 				4A4F7E4B21578DC4000B08D7 /* Endpoint.swift in Sources */,
 				4AA1BF0C21574A8D0095EB08 /* HTTPClient.swift in Sources */,
 				4A4F7E4921578BBD000B08D7 /* HTTPMethod.swift in Sources */,
+				4ADE73FE2158092D00EB8E6F /* ImageCache.swift in Sources */,
+				4ADE73FC2158091300EB8E6F /* ImageCacheClient.swift in Sources */,
 				4ADE73EF2157E97500EB8E6F /* ImageRepository.swift in Sources */,
 				4ADE73F12157E98C00EB8E6F /* ImageService.swift in Sources */,
 				4ADE73ED2157E4A300EB8E6F /* ImageUseCase.swift in Sources */,
@@ -842,6 +892,8 @@
 				4A4F7E1821576AAA000B08D7 /* Segue.swift in Sources */,
 				4A4F7E0521576484000B08D7 /* SplashPresenter.swift in Sources */,
 				4A4F7E0121576436000B08D7 /* SplashViewController.swift in Sources */,
+				4ADE73FA215808F200EB8E6F /* Storage.swift in Sources */,
+				4ADE73F7215808C400EB8E6F /* StorageClient.swift in Sources */,
 				4A4F7E0B215764FD000B08D7 /* String+Dequeue.swift in Sources */,
 				4ADE73F32157F2BE00EB8E6F /* Theme.swift in Sources */,
 				4A4F7E272157739E000B08D7 /* UITableView+Dequeue.swift in Sources */,
