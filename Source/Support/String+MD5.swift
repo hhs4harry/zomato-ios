@@ -196,6 +196,7 @@ class MD5: HashProtocol {
 
     private let hashes: [UInt32] = [0x6745_2301, 0xEFCD_AB89, 0x98BA_DCFE, 0x1032_5476]
 
+    // swiftlint:disable:next function_body_length
     func calculate() -> [UInt8] {
         var tmpMessage = prepare(64)
         tmpMessage.reserveCapacity(tmpMessage.count + 4)
