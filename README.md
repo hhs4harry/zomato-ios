@@ -1,29 +1,16 @@
-# zomato-ios
+# Zomato
 
 ## Project setup
-##### Rename
-```sh
-$ cd zomato-ios/
-$ sh ./project-rename.sh zomato-ios newName
+
+### Carthage
+
+```bash
+carthage update --platform iOS
 ```
 
-##### Update remote url to new repository
-```sh 
-git remote set-url origin git@bitbucket.org:yourNewProject.git
-```
+### APIKey
 
-##### Stage and commit project rename changes
-
-```sh
-git add .
-git commit -m "initial"
-```
-
-##### Push changes to master and develop
-```sh
-git push -u origin master
-git push -u origin develop
-```
+To run the app open `Endpoint.swift` and update `apiKey` with your API key.
 
 ## Requirements
 ##### SwiftLint
