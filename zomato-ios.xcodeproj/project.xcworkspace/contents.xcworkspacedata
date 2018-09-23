@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HSProject.xcodeproj">
+      location = "self:zomato-ios.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,10 +1,10 @@
-# HSProject
+# zomato-ios
 
 ## Project setup
 ##### Rename
 ```sh
-$ cd HSProject/
-$ sh ./project-rename.sh HSProject newName
+$ cd zomato-ios/
+$ sh ./project-rename.sh zomato-ios newName
 ```
 
 ##### Update remote url to new repository

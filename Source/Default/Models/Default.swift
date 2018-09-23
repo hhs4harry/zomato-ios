@@ -1,6 +1,6 @@
 //
 //  Default.swift
-//  HSProject
+//  zomato-ios
 //
 //  Created by Harry on 9/05/18.
 //  Copyright © 2018 |x|. All rights reserved.

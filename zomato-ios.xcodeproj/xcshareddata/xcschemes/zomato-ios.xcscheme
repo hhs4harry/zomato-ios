@@ -15,9 +15,9 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-                     BuildableName = "HSProject.app"
-                     BlueprintName = "HSProject"
-                     ReferencedContainer = "container:HSProject.xcodeproj">
+                     BuildableName = "zomato-ios.app"
+                     BlueprintName = "zomato-ios"
+                     ReferencedContainer = "container:zomato-ios.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-               BuildableName = "HSProject.app"
-               BlueprintName = "HSProject"
-               ReferencedContainer = "container:HSProject.xcodeproj">
+               BuildableName = "zomato-ios.app"
+               BlueprintName = "zomato-ios"
+               ReferencedContainer = "container:zomato-ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -54,7 +54,7 @@
                BlueprintIdentifier = "4AC982A820A1E5A50008D1AA"
                BuildableName = "Specs.xctest"
                BlueprintName = "Specs"
-               ReferencedContainer = "container:HSProject.xcodeproj">
+               ReferencedContainer = "container:zomato-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -64,7 +64,7 @@
                BlueprintIdentifier = "CED6AAF01BD9D3F8001911A0"
                BuildableName = "Features.xctest"
                BlueprintName = "Features"
-               ReferencedContainer = "container:HSProject.xcodeproj">
+               ReferencedContainer = "container:zomato-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-            BuildableName = "HSProject.app"
-            BlueprintName = "HSProject"
-            ReferencedContainer = "container:HSProject.xcodeproj">
+            BuildableName = "zomato-ios.app"
+            BlueprintName = "zomato-ios"
+            ReferencedContainer = "container:zomato-ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-            BuildableName = "HSProject.app"
-            BlueprintName = "HSProject"
-            ReferencedContainer = "container:HSProject.xcodeproj">
+            BuildableName = "zomato-ios.app"
+            BlueprintName = "zomato-ios"
+            ReferencedContainer = "container:zomato-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -114,9 +114,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-            BuildableName = "HSProject.app"
-            BlueprintName = "HSProject"
-            ReferencedContainer = "container:HSProject.xcodeproj">
+            BuildableName = "zomato-ios.app"
+            BlueprintName = "zomato-ios"
+            ReferencedContainer = "container:zomato-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
