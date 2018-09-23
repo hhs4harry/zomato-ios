@@ -15,8 +15,8 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-                     BuildableName = "zomato-ios.app"
-                     BlueprintName = "zomato-ios"
+                     BuildableName = "zomato.app"
+                     BlueprintName = "zomato"
                      ReferencedContainer = "container:zomato-ios.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-               BuildableName = "zomato-ios.app"
-               BlueprintName = "zomato-ios"
+               BuildableName = "zomato.app"
+               BlueprintName = "zomato"
                ReferencedContainer = "container:zomato-ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -72,8 +72,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-            BuildableName = "zomato-ios.app"
-            BlueprintName = "zomato-ios"
+            BuildableName = "zomato.app"
+            BlueprintName = "zomato"
             ReferencedContainer = "container:zomato-ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -95,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-            BuildableName = "zomato-ios.app"
-            BlueprintName = "zomato-ios"
+            BuildableName = "zomato.app"
+            BlueprintName = "zomato"
             ReferencedContainer = "container:zomato-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -114,8 +114,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE27AEF207436F100F977A1"
-            BuildableName = "zomato-ios.app"
-            BlueprintName = "zomato-ios"
+            BuildableName = "zomato.app"
+            BlueprintName = "zomato"
             ReferencedContainer = "container:zomato-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -13,5 +13,5 @@ final class DefaultSpec: XCTestCase {
     }
 }
 
-@testable import zomato-ios
 import XCTest
+@testable import zomato

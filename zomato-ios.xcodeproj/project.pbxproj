@@ -22,7 +22,7 @@
 			containerPortal = 4AE27AE8207436F100F977A1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4AE27AEF207436F100F977A1;
-			remoteInfo = zomato-ios;
+			remoteInfo = "zomato-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -31,11 +31,11 @@
 		4AE27AFA207436F200F977A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC982B320A1E5FB0008D1AA /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
 		4AC982AB20A1E5A50008D1AA /* DefaultSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpec.swift; sourceTree = "<group>"; };
-		4AC982C420A1F9040008D1AA /* zomato-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zomato-ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC982AD20A1E5A50008D1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE27AFF207436F200F977A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AC982C520A1F94B0008D1AA /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE27AF5207436F200F977A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AC982C420A1F9040008D1AA /* zomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE27AF8207436F200F977A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AE27AFD207436F200F977A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AA1BF042157487C0095EB08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AC982C520A1F94B0008D1AA /* Specs.xctest */,
+				4AC982C420A1F9040008D1AA /* zomato.app */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4AC9829520A1E5180008D1AA /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,10 +117,9 @@
 		4AE27AE7207436F100F977A1 = {
 			isa = PBXGroup;
 			children = (
-				4AC982C420A1F9040008D1AA /* zomato-ios.app */,
-				4AC982C520A1F94B0008D1AA /* Specs.xctest */,
 				4AC9829520A1E5180008D1AA /* Source */,
 				4AC982AA20A1E5A50008D1AA /* Specs */,
+				4AA1BF042157487C0095EB08 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,9 +144,9 @@
 			productReference = 4AC982C520A1F94B0008D1AA /* Specs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4AE27AEF207436F100F977A1 /* zomato-ios */ = {
+		4AE27AEF207436F100F977A1 /* zomato */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AE27B0D207436F200F977A1 /* Build configuration list for PBXNativeTarget "zomato-ios" */;
+			buildConfigurationList = 4AE27B0D207436F200F977A1 /* Build configuration list for PBXNativeTarget "zomato" */;
 			buildPhases = (
 				4AE27AEC207436F100F977A1 /* Sources */,
 				4AE27AED207436F100F977A1 /* Frameworks */,
@@ -150,9 +158,9 @@
 			);
 			dependencies = (
 			);
-			name = zomato-ios;
-			productName = zomato-ios;
-			productReference = 4AC982C420A1F9040008D1AA /* zomato-ios.app */;
+			name = zomato;
+			productName = "zomato-ios";
+			productReference = 4AC982C420A1F9040008D1AA /* zomato.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +200,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AE27AEF207436F100F977A1 /* zomato-ios */,
+				4AE27AEF207436F100F977A1 /* zomato */,
 				4AC982A820A1E5A50008D1AA /* Specs */,
 			);
 		};
@@ -273,7 +281,7 @@
 /* Begin PBXTargetDependency section */
 		4AC982AF20A1E5A50008D1AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4AE27AEF207436F100F977A1 /* zomato-ios */;
+			target = 4AE27AEF207436F100F977A1 /* zomato */;
 			targetProxy = 4AC982AE20A1E5A50008D1AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -325,7 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zomato-ios.app/zomato-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zomato.app/zomato";
 			};
 			name = Debug;
 		};
@@ -356,7 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zomato-ios.app/zomato-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zomato.app/zomato";
 			};
 			name = Release;
 		};
@@ -522,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AE27B0D207436F200F977A1 /* Build configuration list for PBXNativeTarget "zomato-ios" */ = {
+		4AE27B0D207436F200F977A1 /* Build configuration list for PBXNativeTarget "zomato" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AE27B0E207436F200F977A1 /* Debug */,
