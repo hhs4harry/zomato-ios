@@ -27,6 +27,7 @@ final class RestaurantsPresenter: RestaurantsPresenting {
     private weak var display: RestaurantsDisplay!
     private weak var router: RestaurantsRouter!
     private let restaurantsUseCase: RestaurantsUseCase
+    private let imageUseCase: ImageUseCase
     private var city: City!
 
     // MARK: Private
@@ -35,17 +36,25 @@ final class RestaurantsPresenter: RestaurantsPresenting {
 
     // MARK: - Initialiser
 
-    init(display: RestaurantsDisplay, router: RestaurantsRouter, restaurantsUseCase: RestaurantsUseCase) {
+    init(display: RestaurantsDisplay, router: RestaurantsRouter, restaurantsUseCase: RestaurantsUseCase, imageUseCase: ImageUseCase) {
         self.display = display
         self.router = router
         self.restaurantsUseCase = restaurantsUseCase
+        self.imageUseCase = imageUseCase
     }
 
     // MARK: - Helpers
 
+    private func image(url: URL) -> SignalProducer<UIImage?, NoError> {
+        print(url.absoluteURL.absoluteString)
+        return imageUseCase.load(image: url).observe(on: QueueScheduler.main)
+    }
+
     private func fetchRestaurants(forCity city: City) {
         disposables += restaurantsUseCase.bestRestaurants(forCity: city)
-            .map { $0.map { RestaurantItem(image: UIImage(), title: $0.name, subTitle: $0.location.address) } }
+            .map { [unowned self] in
+                $0.map { RestaurantItem(image: self.image(url: $0.image), title: $0.name, subTitle: $0.location.address) }
+            }
             .observe(on: QueueScheduler.main)
             .on(
                 value: { [unowned self] restaurants in
@@ -76,11 +85,17 @@ extension RestaurantsPresenter: RestaurantsInjectable {
 extension RestaurantsPresenter: DependencyInjectionAware {
     static func register(in container: Container) {
         container.register(RestaurantsPresenting.self) { resolver, display, router in
-            RestaurantsPresenter(display: display, router: router, restaurantsUseCase: resolver.resolve(RestaurantsUseCase.self)!)
+            RestaurantsPresenter(
+                display: display,
+                router: router,
+                restaurantsUseCase: resolver.resolve(RestaurantsUseCase.self)!,
+                imageUseCase: resolver.resolve(ImageUseCase.self)!
+            )
         }
         .inObjectScope(.transient)
     }
 }
 import ReactiveSwift
+import enum Result.NoError
 import Swinject
 import UIKit

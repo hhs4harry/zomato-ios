@@ -19,6 +19,9 @@
 		4AA1BF0C21574A8D0095EB08 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1BF0B21574A8D0095EB08 /* HTTPClient.swift */; };
 		4A4F7DD821574C44000B08D7 /* HTTPClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7DD721574C44000B08D7 /* HTTPClientSpec.swift */; };
 		4A4F7E4921578BBD000B08D7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E4821578BBD000B08D7 /* HTTPMethod.swift */; };
+		4ADE73EF2157E97500EB8E6F /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73EE2157E97500EB8E6F /* ImageRepository.swift */; };
+		4ADE73F12157E98C00EB8E6F /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73F02157E98C00EB8E6F /* ImageService.swift */; };
+		4ADE73ED2157E4A300EB8E6F /* ImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73EC2157E4A300EB8E6F /* ImageUseCase.swift */; };
 		4AE27AFE207436F200F977A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE27AFC207436F200F977A1 /* LaunchScreen.storyboard */; };
 		4A4F7E2F21578120000B08D7 /* MockDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E2E21578120000B08D7 /* MockDisplay.swift */; };
 		4A4F7DF921575651000B08D7 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7DF821575651000B08D7 /* MockRequest.swift */; };
@@ -64,6 +67,7 @@
 		4A4F7E0121576436000B08D7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E0021576436000B08D7 /* SplashViewController.swift */; };
 		4A4F7E0B215764FD000B08D7 /* String+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E0A215764FD000B08D7 /* String+Dequeue.swift */; };
 		4A4F7E3621578223000B08D7 /* Support+DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E3521578223000B08D7 /* Support+DI.swift */; };
+		4ADE73F32157F2BE00EB8E6F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE73F22157F2BE00EB8E6F /* Theme.swift */; };
 		4A4F7E272157739E000B08D7 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E262157739E000B08D7 /* UITableView+Dequeue.swift */; };
 		4A4F7E542157B7EE000B08D7 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E532157B7EE000B08D7 /* UITableView+Register.swift */; };
 		4A4F7E2121576E71000B08D7 /* ViewWithNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E2021576E71000B08D7 /* ViewWithNib.swift */; };
@@ -92,6 +96,9 @@
 		4AA1BF0B21574A8D0095EB08 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		4A4F7DD721574C44000B08D7 /* HTTPClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpec.swift; sourceTree = "<group>"; };
 		4A4F7E4821578BBD000B08D7 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		4ADE73EE2157E97500EB8E6F /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
+		4ADE73F02157E98C00EB8E6F /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		4ADE73EC2157E4A300EB8E6F /* ImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUseCase.swift; sourceTree = "<group>"; };
 		4AC982AD20A1E5A50008D1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE27AFF207436F200F977A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A4F7E2E21578120000B08D7 /* MockDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDisplay.swift; sourceTree = "<group>"; };
@@ -143,6 +150,7 @@
 		4A4F7E3521578223000B08D7 /* Support+DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Support+DI.swift"; sourceTree = "<group>"; };
 		4A4F7DE32157540B000B08D7 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		4A4F7DE42157540B000B08D7 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
+		4ADE73F22157F2BE00EB8E6F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4A4F7E262157739E000B08D7 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
 		4A4F7E532157B7EE000B08D7 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
 		4A4F7E2021576E71000B08D7 /* ViewWithNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithNib.swift; sourceTree = "<group>"; };
@@ -247,6 +255,8 @@
 		4A4F7DEC21575526000B08D7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4ADE73EE2157E97500EB8E6F /* ImageRepository.swift */,
+				4ADE73EC2157E4A300EB8E6F /* ImageUseCase.swift */,
 				4A4F7DED21575532000B08D7 /* RepositoryError.swift */,
 			);
 			path = Shared;
@@ -256,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				4A4F7E4A21578DC4000B08D7 /* Endpoint.swift */,
+				4ADE73F02157E98C00EB8E6F /* ImageService.swift */,
 				4A4F7DF021575562000B08D7 /* Foundation */,
 			);
 			path = Shared;
@@ -348,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				4A4F7E1A21576B03000B08D7 /* Routes.swift */,
+				4ADE73F22157F2BE00EB8E6F /* Theme.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -800,6 +812,9 @@
 				4A4F7E4B21578DC4000B08D7 /* Endpoint.swift in Sources */,
 				4AA1BF0C21574A8D0095EB08 /* HTTPClient.swift in Sources */,
 				4A4F7E4921578BBD000B08D7 /* HTTPMethod.swift in Sources */,
+				4ADE73EF2157E97500EB8E6F /* ImageRepository.swift in Sources */,
+				4ADE73F12157E98C00EB8E6F /* ImageService.swift in Sources */,
+				4ADE73ED2157E4A300EB8E6F /* ImageUseCase.swift in Sources */,
 				4AA1BF0A21574A710095EB08 /* NetworkClient.swift in Sources */,
 				4A4F7E032157646E000B08D7 /* PresenterSource.swift in Sources */,
 				4A4F7DEE21575532000B08D7 /* RepositoryError.swift in Sources */,
@@ -828,6 +843,7 @@
 				4A4F7E0521576484000B08D7 /* SplashPresenter.swift in Sources */,
 				4A4F7E0121576436000B08D7 /* SplashViewController.swift in Sources */,
 				4A4F7E0B215764FD000B08D7 /* String+Dequeue.swift in Sources */,
+				4ADE73F32157F2BE00EB8E6F /* Theme.swift in Sources */,
 				4A4F7E272157739E000B08D7 /* UITableView+Dequeue.swift in Sources */,
 				4A4F7E542157B7EE000B08D7 /* UITableView+Register.swift in Sources */,
 				4A4F7E2121576E71000B08D7 /* ViewWithNib.swift in Sources */,

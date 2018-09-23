@@ -21,13 +21,13 @@ struct Restaurant: Codable {
 
     let name: String
     let location: Location
-    let thumbnail: URL
+    let image: URL
     let rating: Rating
 
     enum CodingKeys: String, CodingKey {
         case name
         case location
-        case thumbnail = "thumb"
+        case image = "featured_image"
         case rating = "user_rating"
     }
 }

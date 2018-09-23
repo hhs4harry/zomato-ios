@@ -28,11 +28,13 @@ final class Dependencies {
 
         SearchUseCaseImplementation.self,
         RestaurantsUseCaseImplementation.self,
+        ImageUseCaseImplementation.self,
 
         // MARK: Data
 
         HTTPClient.self,
         Endpoint.self,
+        ImageService.self,
         SearchService.self,
         RestaurantsService.self,
     ]

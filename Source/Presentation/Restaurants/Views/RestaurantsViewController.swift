@@ -22,6 +22,7 @@ final class RestaurantsViewController: UIViewController, PresenterSource {
 
     @IBOutlet private var tableView: UITableView! {
         didSet {
+            tableView.rowHeight = 200
             tableView.register(RestaurantView.self)
         }
     }
