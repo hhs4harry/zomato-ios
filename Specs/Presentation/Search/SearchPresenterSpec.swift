@@ -10,13 +10,15 @@ final class SearchPresenterSpec: QuickSpec {
     var presenter: SearchPresenter!
     var display: MockSearchDisplay!
     var router: MockSearchRouter!
+    var searchUseCase: MockSearchUseCase!
 
     override func spec() {
         describe("a SearchPresenter") {
             beforeEach {
                 self.display = MockSearchDisplay()
                 self.router = MockSearchRouter()
-                self.presenter = SearchPresenter(display: self.display, router: self.router)
+                self.searchUseCase = MockSearchUseCase()
+                self.presenter = SearchPresenter(display: self.display, router: self.router, searchUseCase: self.searchUseCase)
             }
 
             afterEach {

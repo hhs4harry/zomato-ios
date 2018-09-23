@@ -25,6 +25,7 @@
 		4A4F7E3121578149000B08D7 /* MockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E3021578149000B08D7 /* MockRouter.swift */; };
 		4A4F7E3C21578535000B08D7 /* MockSearchDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E3B21578535000B08D7 /* MockSearchDisplay.swift */; };
 		4A4F7E3E2157854D000B08D7 /* MockSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E3D2157854D000B08D7 /* MockSearchRouter.swift */; };
+		4A4F7E572157BC7F000B08D7 /* MockSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7E562157BC7F000B08D7 /* MockSearchUseCase.swift */; };
 		4A4F7DF521575614000B08D7 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7DF421575614000B08D7 /* MockURLSession.swift */; };
 		4A4F7DF721575638000B08D7 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F7DF621575638000B08D7 /* MockURLSessionDataTask.swift */; };
 		4AA1BF0A21574A710095EB08 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1BF0921574A710095EB08 /* NetworkClient.swift */; };
@@ -87,6 +88,7 @@
 		4A4F7E3021578149000B08D7 /* MockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouter.swift; sourceTree = "<group>"; };
 		4A4F7E3B21578535000B08D7 /* MockSearchDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchDisplay.swift; sourceTree = "<group>"; };
 		4A4F7E3D2157854D000B08D7 /* MockSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchRouter.swift; sourceTree = "<group>"; };
+		4A4F7E562157BC7F000B08D7 /* MockSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchUseCase.swift; sourceTree = "<group>"; };
 		4A4F7DF421575614000B08D7 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		4A4F7DF621575638000B08D7 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 		4AA1BF0921574A710095EB08 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -415,6 +417,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4A4F7E552157BC6D000B08D7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4A4F7E582157BC83000B08D7 /* Mocks */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4A4F7E582157BC83000B08D7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4A4F7E562157BC7F000B08D7 /* MockSearchUseCase.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		4AA1BF0521574A490095EB08 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +488,7 @@
 			children = (
 				4AC982AD20A1E5A50008D1AA /* Info.plist */,
 				4A4F7DD521574C15000B08D7 /* Data */,
+				4A4F7E552157BC6D000B08D7 /* Domain */,
 				4A4F7E28215780ED000B08D7 /* Presentation */,
 				4A4F7E2C21578105000B08D7 /* Support */,
 			);
@@ -675,6 +694,7 @@
 				4A4F7E3121578149000B08D7 /* MockRouter.swift in Sources */,
 				4A4F7E3C21578535000B08D7 /* MockSearchDisplay.swift in Sources */,
 				4A4F7E3E2157854D000B08D7 /* MockSearchRouter.swift in Sources */,
+				4A4F7E572157BC7F000B08D7 /* MockSearchUseCase.swift in Sources */,
 				4A4F7DF521575614000B08D7 /* MockURLSession.swift in Sources */,
 				4A4F7DF721575638000B08D7 /* MockURLSessionDataTask.swift in Sources */,
 				4A4F7E3921578487000B08D7 /* SearchPresenterSpec.swift in Sources */,
